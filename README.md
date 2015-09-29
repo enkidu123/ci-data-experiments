@@ -36,25 +36,25 @@ You can view the notebooks directly in the browser:
 (Be warned - these are in very draft form and **probably contain errors!!!**)
 
 [data-gg-health-concerns.ipynb](https://github.com/enkidu123/ci-data-experiments/blob/master/notebooks/data-gg-health-concerns.ipynb)
-:	Examines the Chest and Heart screening data from http://data.gg.
-:	The data is highly summarized, but a clear trend is identified in the limited data.
+-	Examines the Chest and Heart screening data from http://data.gg.
+-	The data is highly summarized, but a clear trend is identified in the limited data.
 
 [data-gg-emissions-types.ipynb](https://github.com/enkidu123/ci-data-experiments/blob/master/notebooks/data-gg-emissions-types.ipynb)
-:	Exploring Guernsey's record on Greenhouse gas emissions.
-:	Guernsey's _per capita_ emissions are compared against an equivalent dataset from the USA.
+-	Exploring Guernsey's record on Greenhouse gas emissions.
+-	Guernsey's _per capita_ emissions are compared against an equivalent dataset from the USA.
 
 [data-un-life-expectancy.ipynb](https://github.com/enkidu123/ci-data-experiments/blob/master/notebooks/data-un-life-expectancy.ipynb)
-:	Looking for some larger datasets to work with, we draw on some UN data to compare national
+-	Looking for some larger datasets to work with, we draw on some UN data to compare national
     income against life expectancy around the world.
 
 [data-gg-traffic-injuries.ipynb](https://github.com/enkidu123/ci-data-experiments/blob/master/notebooks/data-gg-traffic-injuries.ipynb)
-:	Another dataset from http://data.gg - clearly displaying traffic accident injuries by type.
-:	The limited population and dataset size makes it difficult to go much further.
+-	Another dataset from http://data.gg - clearly displaying traffic accident injuries by type.
+-	The limited population and dataset size makes it difficult to go much further.
 
 [data-je-population.ipynb](https://github.com/enkidu123/ci-data-experiments/blob/master/notebooks/data-je-population.ipynb)
-:	A first attempt at trying to get some Jersey data in - ended up having to OCR pages
+-	A first attempt at trying to get some Jersey data in - ended up having to OCR pages
 	from a PDF report!
-	Nothing of interest here yet, but hopefully more Jersey data is on its way soon...
+-	Nothing of interest here yet, but hopefully more Jersey data is on its way soon...
 
 
 Why Jupyter?
@@ -84,6 +84,22 @@ There are various roles that may become involved in an analysis, eg:
  - anyone with **basic mathematical and computer skills** can download the notebooks and
    run and tweak the analyses themselves, or apply similar techniques to other datasets
  - an interested **layperson** can read the analysis
+
+
+How can I get started editing notebooks with Jupyter?
+-----------------------------------------------------
+Jupyter is a Python project, and installation documentation can be found at:
+
+	http://jupyter.readthedocs.org/en/latest/install.html
+
+If you're a [Docker](https://www.docker.com/) user, then there is a convenient image available:
+
+	https://hub.docker.com/r/ipython/scipyserver/
+
+This is my preferred option - it makes it easy to fire up a Jupyter server and destroy
+it when you've finished.
+Just remember to mount your `/notebooks` folder as an external volume, or they'll be lost
+when you destroy the container!
 
 
 What's next?
